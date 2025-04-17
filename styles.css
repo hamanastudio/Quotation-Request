@@ -1,0 +1,210 @@
+/* 全体のスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter風フォント */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: rgb(255, 255, 255); /* ヘッダーの背景色 */
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* ヘッダー内のコンテナ */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* 左右にスペースを分ける */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* ロゴ */
+.logo {
+    margin-left: auto;  /* ロゴを中央に配置する */
+    margin-right: auto;
+}
+
+
+
+/* ロゴ */
+.logo img {
+    width: 250px; /* ロゴの幅を大きく設定 */
+    margin: 0 auto;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* メインコンテンツの位置調整 */
+main {
+    margin-top: 50px; /* フォームの位置を50px下げる */
+}
+
+/* フォームのスタイル */
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    color: rgb(76, 76, 76);
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 15pt;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 15pt;
+    background-color: rgb(207, 207, 207);
+    color: rgb(90, 90, 90);
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* サイズとカラーのセレクトボックスのテキストサイズ */
+select {
+    font-size: 10pt; /* フォントサイズを10ptに設定 */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
+/* タイトルのスタイル */
+.form-title {
+    font-size: 15pt; /* フォントサイズ15pt */
+    color: grey; /* テキストカラーをグレーに */
+    margin-bottom: 20px; /* フォームとの間に少しスペースを追加 */
+}
+
+.form-title {
+    font-size: 15pt;                      /* 既存のサイズ */
+    color: black;                         /* 黒色 */
+    font-family: 'Courier New', Courier, monospace; /* タイプライターフォント */
+    text-align: center;                   /* 中央寄せ */
+    font-weight: 300;                     /* 細めのウェイト */
+    margin-bottom: 20px;                  /* 下部マージン */
+}
+
+/* 入力欄のフォントサイズを 10pt に設定 */
+input,
+select,
+textarea {
+    font-size: 10pt !important;
+}
+
+/* Add Items ボタン */
+.add-item-btn {
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .add-item-btn:hover {
+    background-color: #555;
+  }
+  
+  .add-item-btn:focus {
+    outline: none;
+  }
+  
+  /* アイテム追加ボタンがクリックされた時に表示されるフォーム部分 */
+  #itemsContainer {
+    margin-top: 20px;
+  }
+
+/* item-group の間にマージンを入れる */
+.item-group {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  /* 最初のグループに余白を持たせない */
+  .item-group:first-child {
+    margin-top: 0;
+  }
+  
+  /* 削除ボタンのスタイル */
+  .remove-item {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20pt;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  form, input, select, textarea, button {
+    font-size: 10pt;
+  }
+  
+  /* フォームタイトル */
+  .form-title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  #cartItems {
+    margin-top: 20px;
+    border-top: 1px dashed #aaa;
+    padding-top: 10px;
+    font-size: 10pt;
+  }
+  
+  .cart-entry {
+    margin-bottom: 5px;
+  }
+  
